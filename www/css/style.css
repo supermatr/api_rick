@@ -1,0 +1,233 @@
+/**/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+
+body {
+    font-size: 100%;
+    background-color: #000;
+    font-family: cursive;
+}
+
+header {    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+    background-color: rgba(175, 175, 175, 0.39);
+}
+
+header .logo {
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list{
+    margin-top: 150px;
+}
+
+.form {
+    display: flex;    
+    margin: auto;
+    margin-right: 60px;
+}
+
+.form input {
+    padding: 1rem;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.411);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form button {
+    border: 1px solid #43843E;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5em #43843E;
+    background-color: #448C3F;
+    color: white;
+    margin-left: 10px;
+    padding: 1rem;    
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button {
+    color:rgba(255, 255, 255, 0.726);    
+    outline: none;
+    background: transparent;
+    border: none !important;
+    margin-left: 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 23%;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 10px;
+    color: #000;
+}
+
+.card-header {
+    padding: 1rem;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 1rem;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-body p {
+    font-size: 1.2rem;
+}
+.buttons button:hover{
+    color: #163f0a;    
+}
+.next{
+    font-size: 50px;
+    padding:5px; 
+    position:fixed;
+    top:350px;
+    right: 50px;
+}
+.prev{
+    font-size: 50px;
+    padding:5px; 
+    position:fixed;
+    top:350px;
+    left: 50px;
+    
+}
+
+footer{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    padding: 30px 0;
+}
+
+footer a{
+    margin-left: 10px;
+    cursor: pointer;
+    color:#A9CB48;
+}
+
+.fundo{
+    position: fixed;
+    z-index:-100;
+    background-color: #527a50 ;
+}
+.portal {
+    opacity: 0.6;
+    position: fixed;
+    z-index: -110;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/rick-and-morty-falling-portal-to-portal-carter-briar.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;    
+    background-color: #25461c;
+}
+
+@media (max-width: 760px){
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    header .logo {
+        width: 30%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .form {
+        margin-bottom: 20px;
+    }
+    
+    .form input {        
+        width: auto;
+        font-size: 12px;
+    }
+    
+    .form button {
+        width: 80px;
+        font-size: 12px;
+        position: relative;
+    }
+
+    .list{
+        display: flex;
+        flex-direction:column;
+        align-items: center;   
+    }
+
+    .card{
+        
+        width: 70%;
+        height: 20%;
+    }
+
+ 
+
+    .prev{
+        left: 10px;
+    }
+    
+    .next{
+        right: 10px;
+    }
+}
+
